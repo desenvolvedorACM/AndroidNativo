@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_perfil"
+            android:icon="@drawable/icon_50"
+            android:title="Perfil"  />
+
+        <item
+            android:id="@+id/nav_pagamento"
+            android:icon="@drawable/icon_63"
+            android:title="Pagamento" />
+        <item
+            android:id="@+id/nav_mensagens"
+            android:icon="@drawable/icon_87"
+            android:title="Mensagens"  />
+        <item
+            android:id="@+id/nav_notificacoes"
+            android:icon="@drawable/icon_114"
+            android:title="Notificações" />
+
+        <item
+            android:id="@+id/nav_config"
+            android:icon="@drawable/icon_48"
+            android:title="Configurações"
+            app:showAsAction="never" />
+
+
+        <item
+            android:id="@+id/nav_logout"
+            android:icon="@drawable/ic_menu_send"
+            android:title="Logout"
+            app:showAsAction="never" />
+    </group>
+
+</menu>

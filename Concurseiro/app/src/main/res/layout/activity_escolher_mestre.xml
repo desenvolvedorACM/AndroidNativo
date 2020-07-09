@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="12dp"
+    tools:context="com.concurseiro.Views.EscolherMestreActivity">
+
+    <!--<TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/disciplinas"
+        android:textSize="22sp" />-->
+
+
+    <Spinner
+        android:id="@+id/spnDisciplinasPai"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:drawSelectorOnTop="true"
+        android:padding="5dp"
+        android:prompt="@string/select"
+        android:textSize="30dp"
+        />
+
+    <!--<TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/disciplinasFilhas"
+        android:textSize="22sp" />-->
+
+    <Spinner
+        android:id="@+id/spnDisciplinasFilhas"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:padding="5dp"
+        android:textSize="30dp" />
+
+    <!--<TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/professores"
+        android:textSize="22sp" />-->
+
+    <Spinner
+        android:id="@+id/spnProfessoresDisciplinaSel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:padding="8dp"
+        android:textSize="22sp" />
+
+    <!--<include
+        android:id="@+id/rb_avaliacao"
+        layout="@layout/item_row_avaliacao_professor"
+        android:layout_width="wrap_content"
+        android:layout_height="110dp" />-->
+
+    <Button
+        android:id="@+id/button_feito"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:background="@color/colorTitle"
+        android:text="@string/button_feito"
+        android:textColor="@color/colorWhite"
+        android:textSize="20sp" />
+
+</LinearLayout>

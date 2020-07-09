@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    android:orientation="vertical"
+    android:padding="12dp"
+    tools:context="com.concurseiro.Views.LoginApiActivity">
+
+    <ImageView
+        android:id="@+id/image_calendar"
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="30dp"
+        android:src="@drawable/texto_concurseiro_reg" />
+
+
+    <EditText
+        android:id="@+id/edit_usuario"
+        style="@style/Base.TextAppearance.AppCompat.Medium"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:background="@color/colorWhite"
+        android:hint="@string/nome_de_usuario"
+        android:inputType="text"
+        android:padding="15dp"
+        android:textSize="18dp" />
+
+    <EditText
+        android:id="@+id/edit_senha"
+        style="@style/Base.TextAppearance.AppCompat.Medium"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:background="@color/colorWhite"
+        android:hint="@string/senha"
+        android:inputType="textPassword"
+        android:padding="15dp"
+        android:textSize="18dp" />
+
+
+    <Button
+        android:id="@+id/button_entrar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/arredonda_botoes"
+        android:padding="15dp"
+        android:text="@string/btnLogin"
+        android:textColor="#FFF"
+        android:textSize="20sp" />
+
+    <View
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="2" />
+
+</LinearLayout>

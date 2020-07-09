@@ -1,0 +1,366 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/layout_principal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorContent"
+    android:orientation="vertical"
+    android:theme="@style/ThemeOverlay.AppCompat.Dark">
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/layoutTopo"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/nav_header_height"
+        android:layout_marginTop="30dp"
+        android:background="@color/colorContent">
+
+        <ImageView
+            android:id="@+id/image_foto_perfil"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="17dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="0dp"
+            android:background="@drawable/borda_spinner"
+            app:layout_constraintLeft_toLeftOf="@+id/guideline21"
+            app:layout_constraintTop_toTopOf="@+id/guideline19"
+            app:srcCompat="@drawable/ic_icon_perfil_60" />
+
+        <ImageView
+            android:id="@+id/image_bandeira_sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="10dp"
+            android:scaleType="centerCrop"
+            app:layout_constraintLeft_toRightOf="@+id/image_foto_perfil"
+            app:layout_constraintTop_toBottomOf="@+id/text_nome_sobre_nome"
+            app:srcCompat="@drawable/ic_estado_sp" />
+
+        <TextView
+            android:id="@+id/text_nome_sobre_nome"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="0dp"
+            android:text="Nome SobreNome"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+            android:textSize="12sp"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintLeft_toRightOf="@+id/image_foto_perfil"
+            app:layout_constraintRight_toLeftOf="@+id/guideline22"
+            app:layout_constraintTop_toTopOf="@+id/guideline19" />
+
+
+        <TextView
+            android:id="@+id/text_estado"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginTop="8dp"
+            android:text="SP"
+            android:textColor="@color/colorWhite"
+            android:textSize="12dp"
+            app:layout_constraintHorizontal_bias="0.007"
+            app:layout_constraintLeft_toRightOf="@+id/image_bandeira_sp"
+            app:layout_constraintRight_toLeftOf="@+id/guideline22"
+            app:layout_constraintTop_toBottomOf="@+id/text_nome_sobre_nome" />
+
+        <ImageView
+            android:id="@+id/image_favoritos"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="18dp"
+            android:layout_marginTop="8dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/icon_89"
+            app:layout_constraintLeft_toLeftOf="@+id/guideline21"
+            app:layout_constraintTop_toBottomOf="@+id/image_foto_perfil" />
+
+        <ImageView
+            android:id="@+id/image_simulados"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="8dp"
+            android:src="@drawable/icon_143"
+            app:layout_constraintLeft_toRightOf="@+id/image_favoritos"
+            app:layout_constraintTop_toBottomOf="@+id/image_foto_perfil" />
+
+        <ImageView
+            android:id="@+id/image_cadernos"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="45dp"
+            android:layout_marginTop="8dp"
+            android:src="@drawable/icon_111"
+            app:layout_constraintLeft_toRightOf="@+id/image_simulados"
+            app:layout_constraintTop_toBottomOf="@+id/image_foto_perfil" />
+
+        <ImageView
+            android:id="@+id/image_ranking"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="32dp"
+            android:layout_marginTop="8dp"
+            android:src="@drawable/icon_110"
+            app:layout_constraintLeft_toRightOf="@+id/image_cadernos"
+            app:layout_constraintTop_toBottomOf="@+id/image_foto_perfil" />
+
+
+        <ImageView
+            android:id="@+id/divider_vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="8dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/deivider_horizontal"
+            app:layout_constraintLeft_toRightOf="@+id/text_estado"
+            app:layout_constraintTop_toBottomOf="@+id/text_nome_sobre_nome" />
+
+        <ImageView
+            android:id="@+id/image_medalha"
+            android:layout_width="20dp"
+            android:layout_height="25dp"
+            android:layout_marginLeft="12dp"
+            android:layout_marginTop="4dp"
+            android:scaleType="fitStart"
+            android:src="@drawable/ic_1"
+            app:layout_constraintLeft_toRightOf="@+id/divider_vertical"
+            app:layout_constraintTop_toBottomOf="@+id/text_nome_sobre_nome" />
+
+        <TextView
+            android:id="@+id/text_medalha"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="1"
+            android:textSize="15sp"
+            app:layout_constraintLeft_toRightOf="@+id/image_medalha"
+            app:layout_constraintTop_toBottomOf="@+id/text_nome_sobre_nome" />
+
+        <ImageView
+            android:id="@+id/image_trofeu"
+            android:layout_width="20dp"
+            android:layout_height="25dp"
+            android:layout_marginLeft="12dp"
+            android:layout_marginTop="4dp"
+            android:scaleType="fitStart"
+            android:src="@drawable/ic_2"
+            app:layout_constraintLeft_toRightOf="@+id/text_medalha"
+            app:layout_constraintTop_toBottomOf="@+id/text_nome_sobre_nome" />
+
+        <TextView
+            android:id="@+id/text_trofeu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="1"
+            android:textSize="15sp"
+            app:layout_constraintLeft_toRightOf="@+id/image_trofeu"
+            app:layout_constraintTop_toBottomOf="@+id/text_nome_sobre_nome" />
+
+
+        <ImageView
+            android:id="@+id/divider_vertical_1"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_marginBottom="8dp"
+            android:layout_marginLeft="21dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="30dp"
+            android:paddingBottom="10dp"
+            android:src="@drawable/deivider_horizontal"
+            app:layout_constraintBottom_toTopOf="@+id/guideline20"
+            app:layout_constraintLeft_toRightOf="@+id/text_cadernos"
+            app:layout_constraintRight_toLeftOf="@+id/text_simulados"
+            app:layout_constraintTop_toBottomOf="@+id/text_nome_sobre_nome" />
+
+        <ImageView
+            android:id="@+id/divider_vertical_2"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_marginBottom="8dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="30dp"
+            android:paddingBottom="10dp"
+            android:src="@drawable/deivider_horizontal"
+            app:layout_constraintBottom_toTopOf="@+id/guideline20"
+            app:layout_constraintLeft_toRightOf="@+id/text_favoritos"
+            app:layout_constraintRight_toLeftOf="@+id/text_simulados"
+            app:layout_constraintTop_toBottomOf="@+id/text_nome_sobre_nome" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/colorCinza"
+            app:layout_constraintBottom_toBottomOf="@+id/divider_vertical_1" />
+
+        <ImageView
+            android:id="@+id/divider_vertical_3"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_marginBottom="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="30dp"
+            android:paddingBottom="10dp"
+            android:src="@drawable/deivider_horizontal"
+            app:layout_constraintBottom_toTopOf="@+id/guideline20"
+            app:layout_constraintLeft_toRightOf="@+id/text_cadernos"
+            app:layout_constraintTop_toBottomOf="@+id/text_nome_sobre_nome"
+            app:layout_constraintVertical_bias="0.509" />
+
+
+        <TextView
+            android:id="@+id/text_favoritos"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="Favoritos"
+            android:textColor="@color/colorWhite"
+            android:textSize="12dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/image_favoritos" />
+
+        <TextView
+            android:id="@+id/text_num_favoritos"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            android:text="0"
+            android:textColor="@color/colorWhite"
+            android:textSize="12dp"
+            app:layout_constraintEnd_toStartOf="@+id/divider_vertical_2"
+            app:layout_constraintStart_toStartOf="@+id/guideline21"
+            app:layout_constraintTop_toBottomOf="@+id/text_favoritos" />
+
+        <TextView
+            android:id="@+id/text_simulados"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="22dp"
+            android:layout_marginTop="0dp"
+            android:text="Simulados"
+            android:textColor="@color/colorWhite"
+            android:textSize="12dp"
+            app:layout_constraintLeft_toRightOf="@+id/text_favoritos"
+            app:layout_constraintTop_toBottomOf="@+id/image_simulados" />
+
+        <TextView
+            android:id="@+id/text_num_simulados"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            android:text="0"
+            android:textColor="@color/colorWhite"
+            android:textSize="12dp"
+            app:layout_constraintEnd_toStartOf="@+id/divider_vertical_1"
+            app:layout_constraintStart_toEndOf="@+id/divider_vertical_2"
+            app:layout_constraintTop_toBottomOf="@+id/text_simulados" />
+
+
+        <TextView
+            android:id="@+id/text_cadernos"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="100dp"
+            android:layout_marginTop="0dp"
+            android:text="Cadernos"
+            android:textColor="@color/colorWhite"
+            android:textSize="12dp"
+            app:layout_constraintLeft_toRightOf="@+id/text_favoritos"
+            app:layout_constraintTop_toBottomOf="@+id/image_simulados" />
+
+        <TextView
+            android:id="@+id/text_num_cadernos"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="0dp"
+            android:text="0"
+            android:textColor="@color/colorWhite"
+            android:textSize="12dp"
+            app:layout_constraintEnd_toStartOf="@+id/divider_vertical_3"
+            app:layout_constraintStart_toEndOf="@+id/divider_vertical_1"
+            app:layout_constraintTop_toBottomOf="@+id/text_cadernos" />
+
+
+        <TextView
+            android:id="@+id/text_ranking"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            android:text="Ranking"
+            android:textAlignment="center"
+            android:textColor="@color/colorWhite"
+            android:textSize="12dp"
+            app:layout_constraintBottom_toBottomOf="@+id/divider_vertical_3"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.055"
+            app:layout_constraintLeft_toRightOf="@+id/guideline2"
+            app:layout_constraintStart_toEndOf="@+id/divider_vertical_3" />
+
+        <TextView
+            android:id="@+id/text_num_ranking"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="25dp"
+            android:text="0"
+            android:textColor="@color/colorWhite"
+            android:textSize="12dp"
+            app:layout_constraintStart_toEndOf="@+id/divider_vertical_3"
+            app:layout_constraintTop_toBottomOf="@+id/text_ranking" />
+
+
+        <android.support.constraint.Guideline
+            android:id="@+id/guideline19"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.04"
+            tools:layout_editor_absoluteX="10dp"
+            tools:layout_editor_absoluteY="97dp" />
+
+        <android.support.constraint.Guideline
+            android:id="@+id/guideline20"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="1.0" />
+
+        <android.support.constraint.Guideline
+            android:id="@+id/guideline21"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.0"
+            tools:layout_editor_absoluteX="10dp"
+            tools:layout_editor_absoluteY="91dp" />
+
+        <android.support.constraint.Guideline
+            android:id="@+id/guideline22"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="1.0"
+            tools:layout_editor_absoluteX="401dp"
+            tools:layout_editor_absoluteY="91dp" />
+
+    </android.support.constraint.ConstraintLayout>
+
+
+</LinearLayout>
+

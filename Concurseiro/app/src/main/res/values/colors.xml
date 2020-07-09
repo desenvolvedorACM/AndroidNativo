@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="colorWhite">#fff</color>
+    <color name="colorEmail">#78aec8</color>
+    <color name="colorTwiter">#40c0ff</color>
+    <color name="colorTitle">#5492c2</color>
+    <color name="colorToolbar">#5e89bc</color>
+    <color name="colorContent">#7d93b3</color>
+    <color name="colorCinza">#BDBDBD</color>
+    <color name="colorMenu">#6b76b6</color>
+    <color name="colorTopoMenu">#518fc0</color>
+    <color name="button_background">#4682B4</color>
+    <color name="colorBlack">#000</color>
+    <color name="colorWhite1">#d7d4d4</color>
+</resources>

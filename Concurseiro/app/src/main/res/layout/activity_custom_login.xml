@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/ic_launcher_background_login"
+    android:padding="10dp">
+
+    <ImageView
+        android:id="@+id/image_texto"
+        android:layout_width="310dp"
+        android:layout_height="40dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:src="@drawable/texto_concurseiros" />
+
+    <TextView
+        android:id="@+id/text_totalconcurso"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/image_texto"
+        android:layout_centerHorizontal="true"
+        android:layout_centerInParent="false"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/borda_num"
+        android:gravity="center_horizontal"
+        android:padding="8dp"
+        android:text="00000"
+        android:textColor="@color/colorWhite"
+        android:textSize="35sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/text_titulo_concurseiro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/text_totalconcurso"
+        android:layout_centerHorizontal="true"
+        android:layout_centerInParent="false"
+        android:layout_marginTop="10dp"
+        android:gravity="center_horizontal"
+        android:text="@string/concurseiros_estudando"
+        android:textColor="@color/colorWhite"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/button_facebook"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/text_titulo_concurseiro"
+        android:layout_marginTop="40dp"
+        android:background="@color/com_facebook_blue"
+        android:drawableLeft="@drawable/ic_icon_face"
+        android:text="@string/btn_signin_facebook"
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        android:textColor="@color/colorWhite"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/button_twitter"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/button_facebook"
+        android:layout_marginTop="10dp"
+        android:background="@color/colorTwiter"
+        android:drawableLeft="@drawable/ic_icon_twitter"
+        android:text="@string/btn_signin_twitter"
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        android:textColor="@color/colorWhite"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/button_login_mail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/button_twitter"
+        android:layout_marginTop="10dp"
+        android:background="@color/colorEmail"
+        android:drawableLeft="@drawable/ic_icon_email"
+        android:text="@string/btn_signin_email"
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        android:textColor="@color/colorWhite"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/link_registro"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="0dp"
+        android:text="@string/btn_link_to_register"
+        android:textAllCaps="false"
+        android:textColor="@color/colorWhite"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/text_registrase"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="0dp"
+        android:text="@string/btn_link_to_register_now"
+        android:textAllCaps="false"
+        android:textColor="@color/colorWhite"
+        android:textSize="15sp"
+        android:textStyle="bold" />
+
+</RelativeLayout>

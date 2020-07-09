@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp">
+
+
+    <ImageView
+        android:id="@+id/image_professor"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_alignLeft="@+id/edit_pergunta"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/edit_pergunta"
+        android:layout_marginTop="14dp"
+        android:src="@drawable/profile" />
+
+    <TextView
+        android:id="@+id/text_mestre"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/edit_pergunta"
+        android:layout_marginBottom="22dp"
+        android:layout_marginLeft="19dp"
+        android:layout_marginStart="19dp"
+        android:layout_toEndOf="@+id/image_professor"
+        android:layout_toRightOf="@+id/image_professor"
+        android:text="Nome mestre"
+        android:textColor="@android:color/black"
+        android:textSize="25sp"
+        android:textStyle="normal" />
+
+
+    <TextView
+        android:id="@+id/edit_pergunta"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/text_escreva_pergunta"
+        android:layout_alignStart="@+id/text_escreva_pergunta"
+        android:layout_below="@+id/image_professor"
+        android:layout_marginTop="26dp"
+        android:background="@drawable/borda_text_perguntar"
+        android:padding="20dp"
+        android:textSize="20sp"
+        android:visibility="gone" />
+
+
+    <EditText
+        android:id="@+id/text_escreva_pergunta"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:gravity="center_horizontal"
+        android:hint="Digite aqui..."
+        android:inputType="textMultiLine"
+        android:textColor="@color/colorPrimary" />
+
+    <ImageButton
+        android:id="@+id/img_foto"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignTop="@+id/img_anexo"
+        android:background="@drawable/icon_169" />
+
+
+    <ImageButton
+        android:id="@+id/img_anexo"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_alignTop="@+id/text_escreva_pergunta"
+        android:layout_toEndOf="@+id/img_link"
+        android:layout_toRightOf="@+id/img_link"
+        android:background="@drawable/icon_37" />
+
+
+    <ImageButton
+        android:id="@+id/img_link"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_alignTop="@+id/text_escreva_pergunta"
+        android:layout_toEndOf="@+id/img_foto"
+        android:layout_toRightOf="@+id/img_foto"
+        android:background="@drawable/icon_177" />
+
+    <Button
+        android:id="@+id/button_perguntar"
+        android:layout_width="80dp"
+        android:layout_height="50dp"
+        android:layout_alignBottom="@+id/img_anexo"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:autoSizeTextType="none"
+        android:text="Enviar" />
+
+
+    <fragment
+        android:id="@+id/fg_rec_foto"
+        android:name="com.concurseiro.Fragments.fg_PergunteMestre"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edit_pergunta"
+        android:tag="TAG" />
+
+</RelativeLayout>

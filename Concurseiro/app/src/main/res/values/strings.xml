@@ -1,0 +1,67 @@
+<resources>
+    <string name="app_name">Concurseiro</string>
+    <string name="login_cancel">Login cancelado</string>
+    <string name="login_error">Login Error</string>
+    <string name="btn_link_to_register">Ainda não tem conta?</string>
+    <string name="btn_link_to_register_now"> Registre-se agora!</string>
+    <string name="btn_signin_email">Conectar com E-mail</string>
+    <string name="btn_signin_facebook">Conectar com o Facebook</string>
+    <string name="btn_signin_twitter">Conectar com o Twitter</string>
+    <string name="title_activity_singup">singupActivity</string>
+
+    <string name="facebook_app_id_">222293118296097</string>
+    <string name="facebook_app_id">136373773651405</string>
+    <string name="twiter_consumer_key">Xb82L7jRjY5ayojyi3w7iSnkH</string>
+    <string name="twiter_consumer_secret">IEz1Qd89hleDTFfzhc84Cqmcy6bkLUcyVznIx9KesbbN3G3sKM</string>
+    <string name="title_activity_menu">MenuActivity</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="concurseiros_estudando">Concurseiros Estudando</string>
+    <string name="assine_portal">ASSINE O PORTAL</string>
+    <string name="obtenha_credito">OBTENHA CRÉDITO</string>
+    <string name="Registrar">Registrar</string>
+    <string name="confirmar_senha">Confirme a senha</string>
+    <string name="digite_email">Digite email</string>
+    <string name="digite_a_senha">Digite a senha</string>
+    <string name="feito">Feito</string>
+    <string name="usu_rio">Usuário</string>
+    <string name="Email">mail</string>
+    <string name="Professor">Professor</string>
+    <string name="nome_de_usuario">Informe seu usuário</string>
+    <string name="senha">Informe sua senha</string>
+    <string name="btnLogin">Entrar</string>
+    <string name="nav_pergunte_mestre_disciplina">Perguntas das suas disciplinas</string>
+    <string name="nav_pergunte_mestre_especificas">Perguntas direcionadas a você</string>
+    <string name="modelSessionUsuario">modelSessionUsuario</string>
+    <string name="First_name">First_name</string>
+    <string name="IsProfessor">IsProfessor</string>
+    <string name="Id_Professor">Id_Professor</string>
+    <string name="Id_Usuario">Id_Usuario</string>
+    <string name="Image">Image</string>
+    <string name="Type">Type</string>
+    <string name="Profile">Profile</string>
+    <string name="disciplinas">Selecionar disciplinas</string>
+    <string name="disciplinasFilhas">Selecionar discipinas filhas</string>
+    <string name="professores">Professores</string>
+    <string name="button_feito">Enviar</string>
+    <string name="button_perguntar">Enviar</string>
+    <string name="Id_Area_disciplina">Id_Area_disciplina</string>
+    <string name="Id_Pessoa">Id_Pessoa</string>
+    <string name="ImageProfessor">ImageProfessor</string>
+    <string name="Name_Professor">Name_Professor</string>
+    <string name="DadosPergunteMestre">DadosPergunteMestre</string>
+    <string name="nome_aluno_padrao">Alexandre Marques</string>
+    <string name="nome_materia">Engenharia biológica</string>
+    <string name="button_responder">Responder</string>
+    <string name="Sua_pergunta">Nome fundador da Microsoft</string>
+    <string name="Id_Pergunta">Id_Pergunta</string>
+    <string name="Pergunta">Pergunta</string>
+    <string name="nome_Aluno_Pergunta">nome_Aluno_Pergunta</string>
+    <string name="UrlImagemAluno">UrlImagemAluno</string>
+    <string name="Materia">Materia</string>
+    <string name="UrlImageProfessor">UrlImageProfessor</string>
+    <string name="select">Disciplinass</string>
+</resources>

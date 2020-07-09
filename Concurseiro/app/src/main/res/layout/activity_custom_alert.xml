@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp">
+
+    <ImageView
+        android:id="@+id/image_icon"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginRight="8dp"
+        android:src="@drawable/ic_launcher_info" />
+
+    <TextView
+        android:id="@+id/text_msg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_toRightOf="@+id/image_icon"
+        android:text="Dados gravados com sucesso"
+        android:textSize="15sp" />
+
+
+    <Button
+        android:id="@+id/button_ok"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/image_icon"
+        android:layout_marginLeft="12dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/arredonda_botoes"
+        android:padding="10dp"
+        android:text="OK"
+        android:textColor="@color/colorWhite" />
+
+    <Button
+        android:id="@+id/button_cancelar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/arredonda_botoes"
+        android:padding="10dp"
+        android:text="Cancelar"
+        android:textColor="@color/colorWhite"
+        android:visibility="gone" />
+</RelativeLayout>

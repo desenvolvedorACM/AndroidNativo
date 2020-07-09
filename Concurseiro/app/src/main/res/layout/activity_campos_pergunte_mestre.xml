@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="15dp">
+
+    <TextView
+        android:id="@+id/text_pergunta"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:background="@drawable/borda_text_perguntar"
+        android:padding="50dp"
+        android:textSize="50sp" />
+
+    <Button
+        android:id="@+id/button_perguntar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/text_pergunta"
+        android:layout_marginTop="20dp"
+        android:background="@color/colorTitle"
+        android:padding="30dp"
+        android:text="@string/button_perguntar"
+        android:textColor="@color/colorWhite"
+        android:textSize="20sp" />
+
+</RelativeLayout>
